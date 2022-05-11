@@ -1,1 +1,61 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T22:38:23.770Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" version="18.0.2" etag="nrrBHvaKZBeYuZNO2NL7" type="github"><diagram id="UE3ZF8bGFUwIyR1NiGXP">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-11T02:46:45.028Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="pC9qnERzAuYv3mTIbdWM" version="18.0.2" type="github">
+  <diagram id="UE3ZF8bGFUwIyR1NiGXP" name="Renderer">
+    <mxGraphModel dx="742" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-1" value="RenderTarget" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="135" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-2" value="Renderer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="175" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-3" value="Renderable" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="95" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-4" value="VertexLayout" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="55" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-8" value="&lt;h1&gt;VertexAttribute&lt;/h1&gt;&lt;p&gt;Defines how a single vertex attribute is stored in the vertex data space.&amp;nbsp;&lt;/p&gt;&lt;p&gt;eg. position, normal, texture_coordinate&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="240" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-11" value="VertexAttribute" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-13" value="&amp;nbsp;offset : size_t" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="-Ag0tIbwfNb9bFWlDUyp-11">
+          <mxGeometry x="11.25" y="75" width="98.75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-15" value="&amp;nbsp;stride : size_t" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="-Ag0tIbwfNb9bFWlDUyp-11">
+          <mxGeometry x="11.25" y="95" width="98.75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-16" value="&amp;nbsp;name : string" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="-Ag0tIbwfNb9bFWlDUyp-11">
+          <mxGeometry x="11.25" y="35" width="98.75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-17" value="&amp;nbsp;index : size_t" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="-Ag0tIbwfNb9bFWlDUyp-11">
+          <mxGeometry x="11.25" y="55" width="98.75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-25" value="VertexLayout" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="270" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-28" value="&amp;nbsp;vertex_attributes : Array&amp;lt;VertexAttribute&amp;gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="-Ag0tIbwfNb9bFWlDUyp-25">
+          <mxGeometry x="11.25" y="35" width="248.75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-34" value="&amp;nbsp;vertex_data : void const *" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="-Ag0tIbwfNb9bFWlDUyp-25">
+          <mxGeometry x="11.250000000000005" y="55" width="248.75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-37" value="&lt;span style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp;attribute_size () -&amp;gt; size_t&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=8.740000000000009;align=left;" vertex="1" parent="-Ag0tIbwfNb9bFWlDUyp-25">
+          <mxGeometry x="10.629999999999999" y="90" width="248.74" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-38" value="&amp;nbsp; &amp;nbsp;attribute (size_t index) -&amp;gt; VertexAttribute &amp;amp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=8.740000000000009;align=left;" vertex="1" parent="-Ag0tIbwfNb9bFWlDUyp-25">
+          <mxGeometry x="10.629999999999995" y="110" width="248.74" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-39" value="&amp;nbsp; &amp;nbsp;attributes () -&amp;gt; Array&amp;lt;VertexAttribute&amp;gt; &amp;amp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=8.740000000000009;align=left;" vertex="1" parent="-Ag0tIbwfNb9bFWlDUyp-25">
+          <mxGeometry x="10.629999999999995" y="130" width="248.74" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-Ag0tIbwfNb9bFWlDUyp-30" value="VertexAttribute" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="15" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
